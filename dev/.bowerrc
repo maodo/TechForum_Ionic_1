@@ -1,4 +1,6 @@
 {
   "directory": "app/libs",
-  "json": "bower.json"
+  "json": "bower.json",
+  "proxy":"http://10.24.219.17:3128",
+  "https-proxy":"http://10.24.219.17:3128"
 }

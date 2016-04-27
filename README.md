@@ -84,7 +84,7 @@ For Android, IOS and wp8
 $ cordova plugin add cordova-plugin-geolocation
 $ cordova plugin add uk.co.workingedge.phonegap.plugin.launchnavigator
 Only for Android
-$ cordova plugin add org.apache.cordova.network-information
+$ cordova plugin add cordova-plugin-network-information
 ```
 
 ### To build for Android
@@ -92,6 +92,12 @@ $ cordova plugin add org.apache.cordova.network-information
 $ cordova platform add android
 Add Splascreen and Icon
 $  cp -r dev/res/android/res/* platforms/android/res
+create a file in /platforms/android named gradle.proprieties and insert 
+    systemProp.http.proxyHost=10.24.219.17
+    systemProp.http.proxyPort=3128
+    systemProp.https.proxyHost=10.24.219.17
+    systemProp.https.proxyPort=3128
+   
 $ cordova build android
 To launch a emulator (you must have Android ADB and a AVD (Android virtual Device)
 $ cordova emulate android
