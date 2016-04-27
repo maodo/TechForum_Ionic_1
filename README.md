@@ -1,17 +1,17 @@
-TechForum 2015 Ionic - Atos Worldline
+TechForum eXplore Ionic - Worldline
 ==========================
 
-_A Mobile Application for Worldline TechForum 2015_
+_A Mobile Application for Worldline TechForum eXplore
 
 **Service :** SDCO - Software Engineering - Web & Mobile Framework
 
 **Technology :** Cordova - HTML5 - CSS3 - JavaScript - AngularJS
 
-**FrameWork :** Ionic
+**FrameWork :** Ionic 1
 
 
 
-> **It's a mobile app for TechForum 2015 in WorldLine. TechForum eXplore is an internal conference dedicated to topics related to technology, through 2 main lines: technical breakthroughs & achievements, and exploratory works on various topics.**
+> **It's a mobile app for TechForum eXplore in WorldLine. TechForum eXplore is an internal conference dedicated to topics related to technology, through 2 main lines: technical breakthroughs & achievements, and exploratory works on various topics.**
 
 ## To install development and production environments
 
@@ -81,7 +81,7 @@ $ sh script
 **Add cordova plugin**
 ```bash
 For Android, IOS and wp8
-$ cordova plugin add org.apache.cordova.geolocation
+$ cordova plugin add cordova-plugin-geolocation
 $ cordova plugin add uk.co.workingedge.phonegap.plugin.launchnavigator
 Only for Android
 $ cordova plugin add org.apache.cordova.network-information
