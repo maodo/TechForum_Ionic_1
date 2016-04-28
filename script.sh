@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "-- Creation de l'application TechForum 2015 pour la mise production --"
+echo "-- Creation de l'application TechForum pour la mise production --"
 
 if test -d www; then
 	echo ""
@@ -39,4 +39,4 @@ cp -r dev/app/libs/ionic/release/fonts/* www/app/libs/ionic/release/fonts
 cp -r dev/app/libs/ionic/release/css/ionic.min.css www/app/libs/ionic/release/css
 cp -r dev/app/libs/ionic/release/js/ionic.bundle.min.js www/app/libs/ionic/release/js
 
-echo "-- L'application TechForum 2015 contenu dans le dossier \"www\" peut être mise en production --"
+echo "-- L'application TechForum contenu dans le dossier \"www\" peut ï¿½tre mise en production --"
