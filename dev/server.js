@@ -1,5 +1,5 @@
 /**
- * Node server for Worldline TechForum 2015
+ * Node server for Worldline TechForum
  */
 var express = require('express');
 var app     = express();
