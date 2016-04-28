@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.worldline.techforum_Ionic_1" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>TechForum 2016</name>
-  <description>&#xD;
-        An Ionic Framework and Cordova project.&#xD;
+  <description>
+        An Ionic Framework and Cordova project.
     </description>
-  <author email="francois.facon@worldline" href="http://worldline.com/">&#xD;
-      Web And Mobile Frameworks Team&#xD;
+  <author email="francois.facon@worldline" href="http://worldline.com/">
+      Web And Mobile Frameworks Team
     </author>
   <content src="app/index.html"/>
   <plugin name="cordova-plugin-whitelist" version="1"/>
@@ -16,7 +16,6 @@
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
-  <preference name="SplashScreenDelay" value="3000"/>
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
@@ -40,4 +39,9 @@
     <splash src="resources/android/splash/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
     <splash src="resources/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
   </platform>
+
+  <preference name="AutoHideSplashScreen" value="false" />
+  <preference name="ShowSplashScreenSpinner" value="false" />
+  <preference name="FadeSplashScreenDuration" value="1000"/>
+  <preference name="SplashScreenDelay" value="5000"/>
 </widget>
