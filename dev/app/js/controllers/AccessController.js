@@ -26,20 +26,49 @@ angular.module('app')
             
         $scope.getMyGps = function(){
             $ionicLoading.show();
-            navigator.geolocation.getCurrentPosition(function(pos) {
-                launchnavigator.navigate(
-                    [$scope.worldlineGPS.latitude, $scope.worldlineGPS.longitude],
-                    [pos.coords.latitude, pos.coords.longitude],
-                    function(){
-                        $ionicLoading.hide();
-                        // alert("Plugin success");
-                    },
-                    function(error){
-                        $ionicLoading.hide();
-                        // alert("Plugin error: "+ error);
-                    }
-                );
-            });
-        };
+            setTimeout(function() {$ionicLoading.hide();}, 10000);
+            var myPos;
+
+            // onSuccess Callback
+            // This method accepts a Position object, which contains the
+            // current GPS coordinates
+             var onSuccess = function(position) {
+                   console.log('Latitude: '          + position.coords.latitude          + '\n' +
+                               'Longitude: '         + position.coords.longitude         + '\n' +
+                                'Altitude: '          + position.coords.altitude          + '\n' +
+                                'Accuracy: '          + position.coords.accuracy          + '\n' +
+                                'Altitude Accuracy: ' + position.coords.altitudeAccuracy  + '\n' +
+                                'Heading: '           + position.coords.heading           + '\n' +
+                                'Speed: '             + position.coords.speed             + '\n' +
+                                'Timestamp: '         + position.timestamp                + '\n');
+                    myPos = position;
+                    console.log('--- getCurrentPosition ---' + myPos);
+                    launchnavigator.navigate(
+                                        [$scope.worldlineGPS.latitude, $scope.worldlineGPS.longitude],
+                                        [myPos.coords.latitude, myPos.coords.longitude],
+                                        function(myPos){
+                                            $ionicLoading.hide();
+                                             console.log('--- navigate success ---' + myPos);
+                                            // alert("Plugin success");
+                                        },
+                                        function(error){
+                                            $ionicLoading.hide();
+                                            console.log('--- navigate error ---' + error);
+                                            // alert("Plugin error: "+ error);
+                                        }
+                                    );
+                                };
+
+
+                // onError Callback receives a PositionError object
+                function onError(error) {
+                    $ionicLoading.hide();
+                    alert('code: '    + error.code    + '\n' + 'message: ' + error.message + '\n');
+                }
+
+                navigator.geolocation.getCurrentPosition(onSuccess,onError);
+
+                };
+
 
     }]);
