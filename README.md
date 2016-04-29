@@ -85,6 +85,7 @@ $ cordova plugin add cordova-plugin-geolocation
 $ cordova plugin add uk.co.workingedge.phonegap.plugin.launchnavigator
 Only for Android
 $ cordova plugin add cordova-plugin-network-information
+$ cordova plugin add cordova-plugin-splashscreen
 ```
 
 ### To build for Android
@@ -186,3 +187,11 @@ Application is now running in :
 
 [localhost:3000](localhost:3000)
 
+## Development workflow for Android 
+
+```bash
+work in dev folder when it is done, update the www folder with the script file 
+$ sh script
+update the plateform folder with    
+$ cordova platform update android
+```
