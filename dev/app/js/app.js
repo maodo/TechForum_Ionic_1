@@ -6,7 +6,8 @@ var app = angular.module('app', ['ionic','ngResource','techForum.filters'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
-
+    if(ionic.Platform.isAndroid())
+       window.cordova.plugins.Wifi.wifiverify();
   //https://forum.ionicframework.com/t/white-page-showing-after-splash-screen-before-app-load/2908/8
   navigator.splashscreen.hide();
   

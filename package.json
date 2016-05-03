@@ -17,7 +17,12 @@
   "cordovaPlugins": [
     "org.apache.cordova.device",
     "org.apache.cordova.console",
-    "com.ionic.keyboard"
+    "com.ionic.keyboard",
+    "cordova-plugin-wifiverify", 
+    {
+      "locator": "https://github.com/mamhf/cordova-plugin-wifiverify",
+      "id": "com.worldline.cordova.wifiVerify"
+    }
   ],
   "cordovaPlatforms": []
 }

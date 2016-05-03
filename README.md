@@ -86,6 +86,7 @@ $ cordova plugin add uk.co.workingedge.phonegap.plugin.launchnavigator
 Only for Android
 $ cordova plugin add cordova-plugin-network-information
 $ cordova plugin add cordova-plugin-splashscreen
+$ cordova plugin add https://github.com/mamhf/cordova-plugin-wifiverify.git
 ```
 
 ### To build for Android
