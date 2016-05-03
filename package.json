@@ -20,7 +20,7 @@
     "com.ionic.keyboard",
     "cordova-plugin-wifiverify", 
     {
-      "locator": "https://github.com/mamhf/cordova-plugin-wifiverify",
+      "locator": "https://github.com/worldline/cordova-plugin-wifiverify.git",
       "id": "com.worldline.cordova.wifiVerify"
     }
   ],
