@@ -9,7 +9,7 @@ app.factory('ConferencesService', ['$resource', function($resource) {
 
         /** get online resource for retreive a conference list **/
         getOnlineConference : function (){
-            confFactory.conferencesResource =  $resource('http://techforum-worldline.rhcloud.com//conferences/:id',{id:'@id'});
+            confFactory.conferencesResource =  $resource('http://techforum2016-worldline.rhcloud.com//conferences/:id',{id:'@id'});
             return confFactory.conferencesResource;
         },
         /** get local resource for retreive a interne conference list (view data folder)**/
